@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+
+/**
+ *
+ * @author fakhrinurramdhani
+ */
+public class No3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int accountNum;
+        String status;
+        int amountSale;
+        
+        accountNum = input.nextInt();
+        status = input.next();
+        
+        
+        if(status.equals("valid")){
+            amountSale = input.nextInt();
+            System.out.println("Invoice");
+            System.out.println("amount sale" + amountSale);
+            System.out.println("Account Number" + accountNum);
+            
+        }else{
+            System.out.println("Error");
+        }
+    }
+    
+}
